@@ -1,0 +1,477 @@
+/* BODY STYLING: Sets up the base elements such as primary font,
+   primary background, and universal spacing. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace; 
+    background-color: #f5f5f9;
+    color: #001d3f;
+    line-height: 1.6;
+}
+/* HEADER STYLING: Creates header-specific design for site-wide use and
+   easibility of creating the exactness of the header section. */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #001d3f;
+    color: #f5f5f9;
+    padding: 20px 0;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+/* MAIN STYLING: Styles all elements contained in the main, laying out
+   the universal sectioning that will be used universally. */
+main section {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 0;
+    width: 100%;
+}
+main h1 {
+    color:#001d3f;
+    font-style: italic;
+    font-size: 73px;
+}
+main h2 {
+    font-size: 56px;
+    color: #f5f5f9;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+main h3 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: normal;
+    margin: 20px;
+}
+main section h4 {
+    font-size: 18px;
+    color: #f5f5f9;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+main section p {
+    font-size: 23px;
+    color: #f5f5f9;
+    line-height: 1.6;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+section figure img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+/* TABLE STYLING: Sets the base design for all tables throughout the website
+   while keeping acessibility and ideal layout in mind. */
+table {
+    border-collapse: collapse;
+    border: 3px solid #001d3f;
+    border-radius: 8px;
+    background-color: #f5f5f9;
+    text-align: center;
+    margin: 20px auto;
+}
+caption {
+    font-weight: bold;
+    padding: 12px;
+    background-color: #001d3f;
+    color: #f5f5f9;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+}
+td {
+    padding: 16px;
+    border-top: 3px solid #001d3f;
+    font-size: 16px;
+}
+td a {
+    color: #001d3f;
+}
+td img {
+    max-width: 100px;
+    height: auto;
+    background-color:#001d3f;
+}
+/* FORM STYLING: Sets the base design for all forms through the website
+   while keeping acessibility and ideal layout in mind. */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+form div:nth-of-type(1),
+form div:nth-of-type(2) {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+form div:nth-of-type(3) {
+    width: 100%;
+    display: block;
+}
+input, textarea {
+    color: #001d3f;
+    background-color: #f5f5f9;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #001d3f;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* FOOTER STYLING: Designs the site-wide style of the footer, allowing
+   extremely easy pasting of the footer across all pages. */
+footer {
+    background-color: #001d3f;
+    color: #f5f5f9;
+    padding: 20px 0;
+}
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+footer img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer li {
+    margin: 3px 0;
+    font-size: 12px;
+    text-align: center;
+}
+footer nav p {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+footer a {
+    color: #f5f5f9;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+/* ALL CLASSES: For easy access of site-wide usable classes with
+   strategic placement for easily exploring all classes to copy on
+   elements site-wide. */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* HEADER CLASSES: Meant for easy placing of styles within specific elements
+   of the header to be used in all other pages on the site. */
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_title a {
+    color: #f5f5f9;
+    text-decoration: none;
+    font-size: 56px;
+    font-weight: bold;
+    font-style: italic;
+}
+/* FOOTER CLASSES: Meant for easy placing of styles within specific elements
+   of the footer to be used in all other pages on the site. */
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer_nav {
+    display: flex;
+    gap: 10px;
+}
+/* SECTION CLASSES: Used for unique styling of direction-based sections to
+   properly align and design each section. */
+.right_section_content {
+    background-color: #001d3f;
+    border-top-left-radius: 67px;
+    border-bottom-left-radius: 67px;
+    width: 90%;
+}
+.left_section_content {
+    background-color: #001d3f;
+    border-top-right-radius: 67px;
+    border-bottom-right-radius: 67px;
+    width: 90%;
+}
+.center_section_content {
+    background-color: #001d3f;
+    padding: 40px 20px;
+    text-align: center;
+}
+/* BUTTON CLASSES: Used to create replica buttons, allowing full control
+   within the style of the more modern-type buttons. */
+.replica_button a {
+    background-color:#00234c;
+    color:#f5f5f9;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 30px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+.replica_button a:hover {
+    background-color:#003066;
+    font-weight: 500;
+}
+.rounded_replica_button {
+    background-color:#00234c;
+    color:#f5f5f9;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 40px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+    border-radius: 67px;
+    margin: 30px auto;
+}
+.rounded_replica_button:hover {
+    background-color:#003066;
+    font-weight: 500;
+}
+input.replica_submit {
+    display: block;
+    margin: 10px auto 0 auto;
+    border: none;
+    background-color:#00234c;
+    color:#f5f5f9;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 30px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+input.replica_submit:hover {
+    background-color:#003066;
+    font-weight: 500;
+}
+/* TEXT BOX CLASSES: Used to create unique styles for different textboxes throughout
+   the website */
+.gray_textbox {
+    background-color: rgba(245,245,249,0.85);
+    color:#001d3f;
+    font-style: italic;
+    font-size: 56px;
+    padding: 10px 100px;
+    display: inline-block;
+    border-radius: 67px;
+    margin: 30px auto;
+}
+.blue_textbox {
+    background-color: #001d3f;
+    color: #f5f5f9;
+    padding: 10px 100px;
+    display: block;
+    border-radius: 67px;
+    width: max-content;
+    margin: 40px auto;
+    text-align: center;
+}
+.left_titlebox {
+    background-color: #001d3f;
+    color: #f5f5f9;
+    padding: 0 200px;
+    border-top-right-radius: 47px;
+    border-bottom-right-radius: 47px;
+    width: fit-content;
+    margin: 20px 0;
+    text-align: center;
+}
+.left_subtitlebox {
+    background-color: #001d3f;
+    color: #f5f5f9;
+    font-size: 40px;
+    padding: 5px 150px;
+    border-top-right-radius: 67px;
+    border-bottom-right-radius: 67px;
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.textbox_square {
+    background-color: #001d3f;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box_crop_image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+}
+/* LEARN CLASSES: Used for unique styling in the learn page and subpages */
+.learn_info section {
+    display: block;
+    text-align: left;
+    padding: 40px 0;
+}
+.learn_info p {
+    color: #001d3f;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: left;
+    text-indent: 40px;
+}
+.learn_info p a {
+    color: #001d3f;
+}
+.learn_info h2 a {
+    color: #f5f5f9;
+}
+/* RESOURCE CLASSES: Used for unique stlying in the resources page and subpages */
+.resources_hero {
+    background-image: url("assets/sheet_music_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+.resources_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.resources_info div {
+    background-color: #f5f5f9;
+    color: #001d3f;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+.resources_info h2 {
+    font-size: 32px;
+}
+.resources_info p {
+    color: #001d3f;
+    font-size: 18px;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.resources_info p a {
+    color: #001d3f;
+}
+.resources_info figure img {
+    width: auto;
+    height: 100vh;
+}
+.resources_tabling_style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+.resources_tabling_style table {
+    width: 300px;
+}
+/* ABOUT CLASSES: Used for unique styling in the about page and subpages */
+.about_head figure img {
+    width: 50vh;
+    height: auto;
+}
+.about_subhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+.about_subhead h2 {
+    color: #001d3f;
+    font-size: 73px;
+}
+.about_subhead figure img {
+    max-width: 800px;
+    max-height: 800px;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+}
+.about_subhead div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_info h2 {
+    color: #001d3f;
+}
+.about_info p {
+    margin-top: 0;
+}
+.about_info figure {
+    display: flex;
+    justify-content: center;
+}
+.about_info figure img {
+    width: auto;
+    max-height: 800px;
+    margin: 0 auto 20px auto;
+}
+.subabout_correction section {
+    display: block;
+    padding: 20px 0;
+}
+.disclaimer {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #001d3f;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    max-width: 800px;
+}
+/* HYPERLINK CLASSES: Made to create uniquely-styled hyperlinks, different 
+   from the base style, that will be placed throughout the site. */
+.general_link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.general_link:hover {
+    text-decoration-thickness: 0.12em;
+    text-shadow: 0 0 0.03em;
+}

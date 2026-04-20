@@ -84,6 +84,9 @@ section figure img {
     border-radius: 4px;
     margin: 0 auto;
 }
+video {
+    padding-left: 20px;
+}
 /* TABLE STYLING: Sets the base design for all tables throughout the website
    while keeping acessibility and ideal layout in mind. */
 table {

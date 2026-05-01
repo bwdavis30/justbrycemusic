@@ -6,6 +6,29 @@
             simple knowledge to share through our easy-access query form or multiple direct contact options.">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="project.css">
+        <!-- FORM JAVASCRIPT: Creates a functional form using EmailJS (sends the form to my email),
+         guided by the offical EmailJS tutorial -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init({
+                publicKey: "pYK3Rd1kFgMrt3312",
+                });
+            })();
+        </script>
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_roco9c3', 'template_mai07hp', this)
+                    .then(() => {
+                        alert("Your query has been sent! Please wait 2-5 days to recieve an email back from the author.");
+                    }, (error) => {
+                        alert("An error has occurred. Please try again.");
+                    });
+            });
+        }
+    </script>
     </head>
     <body>
         <!-- HEADER SECTION: Sets up the base header for the entire web page -->
@@ -48,7 +71,7 @@
                 <div>
                     <h3>Got A Query?</h3>
                 </div>
-                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <form id="contact-form">
                     <div>
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" required>
@@ -66,10 +89,6 @@
                     </div>
                 </form>
             </section>
-            <p class="disclaimer">
-                Please Be Advised: True functionality of this form is currently under
-                development. Please refer to direct forms of contact.
-            </p>
         </main>
         <!-- FOOTER SECTION: Sets up the base footer for the entire web page -->
         <footer>

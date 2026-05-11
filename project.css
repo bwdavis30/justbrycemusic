@@ -465,7 +465,7 @@ input.replica_submit:hover {
     font-weight: bold;
     color: #001d3f;
     text-align: center;
-    margin: 20px auto 20px auto;
+    margin: -100px auto 0px auto;
     max-width: 800px;
 }
 /* HYPERLINK CLASSES: Made to create uniquely-styled hyperlinks, different 
